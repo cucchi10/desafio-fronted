@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate , useLocation, Link } from 'react-router-dom';
 import { Typography, Result, Button } from 'antd';
 import '../utils/styles/PicDetail.css';
-import PicContext from '../contexts/PicContext';
+import {PicContext} from '../contexts/PicContext';
 
 import CustomLayout from '../components/Layout';
 

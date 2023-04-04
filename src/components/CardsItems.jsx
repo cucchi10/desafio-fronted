@@ -7,20 +7,20 @@ import '../utils/styles/CardsItems.css';
 
 const { Text } = Typography;
 
-function CardsItems({ isLoading, picsInfo }) {
+function CardsItems({ isLoading, pics }) {
   return (
     <Row className='Items-Rows'>
-      {isLoading && 
+      {isLoading &&
         <Spin tip="Loading" size="large" />
       }
-      {!isLoading && picsInfo && !picsInfo.length &&
+      {!isLoading && pics && !pics.length &&
         <div className="empty">
           <Text>No hay datos a mostrar!</Text>
         </div>
       }
-      {!isLoading && picsInfo && picsInfo.length > 0 &&
-        picsInfo.map((pic) => (
-          <Link key={pic.id} to={{ pathname: `/pic/${pic.id}`, state: { pic }}}>
+      {!isLoading && pics && pics.length > 0 &&
+        pics.map((pic) => (
+          <Link key={pic.id} to={{ pathname: `/pic/${pic.id}`, state: { pic } }}>
             <CardPic key={pic.id} pic={pic} />
           </Link>
         ))

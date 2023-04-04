@@ -7,16 +7,10 @@ const UsePics = (onSuccess, onError) => {
     const response = await get(`${API}`);
     return response.data;
   };
-  const {
-    mutate, isError, isLoading, error,
-  } = useMutation(
-    'searchPics',
-    () => searchPics(),
-    {
-      onSuccess,
-      onError,
-    },
-  );
+  const { mutate, isError, isLoading, error } = useMutation('searchPics', () => searchPics(), {
+    onSuccess,
+    onError,
+  });
 
   return {
     searchPics: () => mutate(),

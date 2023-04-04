@@ -1,2 +1,2 @@
-export const currentPageDefault = 1
-export const picsPerPageDefault = 20
+export const currentPageDefault = 1;
+export const picsPerPageDefault = 20;
