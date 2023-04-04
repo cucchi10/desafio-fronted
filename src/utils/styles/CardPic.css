@@ -1,0 +1,37 @@
+
+.Card-Pic-Container-xs, .Card-Pic-Container-lg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Pic-IMG-xs, .Card-Pic-IMG-lg{
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+/* Exclusive */
+
+/* XS */
+.Card-Pic-xs{
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+
+}
+
+/* LG */
+.Card-Pic-lg{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  cursor:auto;
+}
+
+/*  */
+.Card-Pic-lg > .ant-card-head > .ant-card-head-wrapper > .ant-card-head-title{
+  white-space: pre-wrap !important;
+}
+

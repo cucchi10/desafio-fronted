@@ -1,0 +1,12 @@
+.Detail-Container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.Button-Back{
+  position: absolute;
+  top: 4.5rem;
+  left: 5px;
+}
