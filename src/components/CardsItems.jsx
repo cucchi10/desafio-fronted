@@ -20,7 +20,7 @@ function CardsItems({ isLoading, pics }) {
       }
       {!isLoading && pics && pics.length > 0 &&
         pics.map((pic) => (
-          <Link key={pic.id} to={{ pathname: `/pic/${pic.id}`, state: { pic } }}>
+          <Link key={pic.id} to={`/pic/${pic.id}`} state={pic}>
             <CardPic key={pic.id} pic={pic} />
           </Link>
         ))

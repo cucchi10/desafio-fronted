@@ -10,3 +10,10 @@
   top: 4.5rem;
   left: 5px;
 }
+
+.Spin-Container{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
