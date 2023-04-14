@@ -18,5 +18,7 @@ Para ejecutar la aplicación en tu ordenador, necesitas tener instalado Node.js 
 ## Fotos
 
 ![1](./images/1.png)
+###
 ![2](./images/2.png)
+###
 ![3](./images/3.png)
